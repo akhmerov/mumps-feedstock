@@ -29,3 +29,6 @@ if errorlevel 1 exit 1
 if errorlevel 1 exit 1
 %src%\build\zsimpletest < %src%\examples\input_simpletest_cmplx
 if errorlevel 1 exit 1
+
+python %RECIPE_DIR%\make_pkg_config.py
+if errorlevel 1 exit 1

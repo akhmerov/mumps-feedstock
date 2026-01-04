@@ -93,6 +93,10 @@ outputs:
               then:
                 - Library/lib/mumps_common.lib
                 - Library/lib/pord.lib
+                - Library/lib/pkgconfig/smumps_seq.pc
+                - Library/lib/pkgconfig/dmumps_seq.pc
+                - Library/lib/pkgconfig/cmumps_seq.pc
+                - Library/lib/pkgconfig/zmumps_seq.pc
               else:
                 - lib/pkgconfig/smumps_seq.pc
                 - lib/pkgconfig/dmumps_seq.pc
