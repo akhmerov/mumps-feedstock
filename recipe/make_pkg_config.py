@@ -15,7 +15,7 @@ Cflags: -I${{includedir}}{extra_cflags}
 Libs: -L${{libdir}} -l{NAME}
 """
 
-prefix = Path(os.environ["PREFIX"])
+prefix = Path(os.environ.get("LIBRARY_PREFIX", os.environ["PREFIX"]))
 version = os.environ["PKG_VERSION"]
 
 lib = prefix / "lib"
