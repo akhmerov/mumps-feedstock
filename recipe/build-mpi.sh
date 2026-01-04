@@ -34,3 +34,5 @@ export LIBEXT_SHARED=${SHLIB_EXT}
 make allshared
 
 cp -av lib/*${SHLIB_EXT} ${PREFIX}/lib
+
+python3 $RECIPE_DIR/make_pkg_config.py

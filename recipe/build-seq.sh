@@ -55,3 +55,5 @@ if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
   ./zsimpletest < input_simpletest_cmplx
   ./c_example
 fi
+
+python3 $RECIPE_DIR/make_pkg_config.py
